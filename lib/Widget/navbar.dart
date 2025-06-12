@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/Utils/colors.dart';
+import 'package:myapp/Utils/constants.dart';
 import 'package:myapp/Utils/styles.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -19,7 +20,7 @@ class _NavBarState extends State<NavBar> {
     );
   }
 
-//=======Mobile=======
+  //=======Mobile=======
 
   Widget MobileNavBar() {
     return Container(
@@ -32,8 +33,7 @@ class _NavBarState extends State<NavBar> {
     );
   }
 
-
-//=======DeskTop=======
+  //=======DeskTop=======
 
   Widget DesktopNavBar() {
     return Container(
@@ -56,8 +56,11 @@ class _NavBarState extends State<NavBar> {
             child: ElevatedButton(
               style: borderedButtonStyle,
               onPressed: () {},
-              child: Text('Request a Demo',style: TextStyle(color:AppColors.primary,),
-            )),
+              child: Text(
+                'Request a Demo',
+                style: TextStyle(color: AppColors.primary),
+              ),
+            ),
           ),
         ],
       ),
@@ -66,7 +69,7 @@ class _NavBarState extends State<NavBar> {
 
   Widget navButton(String text) {
     return Container(
-      margin : EdgeInsets.symmetric(horizontal: 10),
+      margin: EdgeInsets.symmetric(horizontal: 10),
       child: TextButton(
         child: Text(text, style: TextStyle(color: Colors.black, fontSize: 18)),
         onPressed: () {},
@@ -78,7 +81,7 @@ class _NavBarState extends State<NavBar> {
     return Container(
       width: 110,
       decoration: BoxDecoration(
-        image: DecorationImage(image: AssetImage('assets/images/logo.png')),
+        image: DecorationImage(image: AssetImage(logo)),
       ),
     );
   }
