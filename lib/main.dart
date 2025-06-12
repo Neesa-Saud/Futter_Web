@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Xpense',
       theme: ThemeData(
         fontFamily: 'HindSiliguri',
-        brightness: Brightness.light,
+     brightness: Brightness.light,
         primaryColor: AppColors.primary,
       ),
       home: Home(),

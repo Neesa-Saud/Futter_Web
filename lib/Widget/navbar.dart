@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/Utils/colors.dart';
+import 'package:myapp/Utils/styles.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class NavBar extends StatefulWidget {
@@ -17,6 +19,8 @@ class _NavBarState extends State<NavBar> {
     );
   }
 
+//=======Mobile=======
+
   Widget MobileNavBar() {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 20),
@@ -27,6 +31,9 @@ class _NavBarState extends State<NavBar> {
       ),
     );
   }
+
+
+//=======DeskTop=======
 
   Widget DesktopNavBar() {
     return Container(
@@ -47,9 +54,10 @@ class _NavBarState extends State<NavBar> {
           Container(
             height: 45,
             child: ElevatedButton(
+              style: borderedButtonStyle,
               onPressed: () {},
-              child: Text('Request a Demo'),
-            ),
+              child: Text('Request a Demo',style: TextStyle(color:AppColors.primary,),
+            )),
           ),
         ],
       ),

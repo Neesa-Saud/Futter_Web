@@ -31,8 +31,8 @@ flutter:
   fonts:
     - family: HindSiliguri
       fonts:
-        - asset: Fonts/HindSiliguri-Bold.ttf
-        - asset: Fonts/HindSiliguri-Light.ttf
-        - asset: Fonts/HindSiliguri-Medium.ttf
-        - asset: Fonts/HindSiliguri-Regular.ttf
-        - asset: Fonts/HindSiliguri-SemiBold.ttf
+        - asset: assets/Fonts/HindSiliguri-Bold.ttf
+        - asset: assets/Fonts/HindSiliguri-Light.ttf
+        - asset: assets/Fonts/HindSiliguri-Medium.ttf
+        - asset: assets/Fonts/HindSiliguri-Regular.ttf
+        - asset: assets/Fonts/HindSiliguri-SemiBold.ttf
