@@ -58,6 +58,7 @@ class _NavBarState extends State<NavBar> {
 
   Widget navButton(String text) {
     return Container(
+      margin : EdgeInsets.symmetric(horizontal: 10),
       child: TextButton(
         child: Text(text, style: TextStyle(color: Colors.black, fontSize: 18)),
         onPressed: () {},
