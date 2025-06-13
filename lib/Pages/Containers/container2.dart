@@ -16,8 +16,92 @@ class COntainer2 extends StatelessWidget {
 
   //=======DeskTop=======
 
+  // ignore: non_constant_identifier_names
   Widget DesktopContainer2() {
-    return Container();
+    return Container(
+      height: 900,
+      width: double.infinity,
+      decoration: BoxDecoration(color: AppColors.primary),
+      child: Column(
+        children: [
+          Expanded(
+            child: Stack(
+              children: [
+                Positioned(
+                  // ignore: sort_child_properties_last
+                  child: Container(
+                    height: 320,
+                    width: 320,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(vector1),
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ),
+                  right: -20,
+                  top: -20,
+                ),
+                Positioned(
+                  // ignore: sort_child_properties_last
+                  child: Container(
+                    height: 320,
+                    width: 320,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(vector2),
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ),
+                  bottom: -20,
+                  left: -20,
+                ),
+                Positioned(
+                  // ignore: sort_child_properties_last
+                  child: Container(
+                    width: double.infinity,
+                    height: 712,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(dashboard),
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ),
+                  left: 43,
+                  right: 43,
+                  bottom: 0,
+                ),
+              ],
+            ),
+          ),
+          Container(
+            color: Colors.white,
+            padding: EdgeInsets.symmetric(vertical: 40),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                companyLogo(fb),
+                companyLogo(google),
+                companyLogo(cocacola),
+                companyLogo(samsung),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget companyLogo(String image) {
+    return Container(
+      width: 160,
+      height: 36,
+      decoration: BoxDecoration(
+        image: DecorationImage(image: AssetImage(image), fit: BoxFit.contain),
+      ),
+    );
   }
 
   //=======Mobile=======
