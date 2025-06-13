@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/Pages/Containers/container1.dart';
+import 'package:myapp/Pages/Containers/container2.dart';
 import 'package:myapp/Utils/constants.dart';
 import 'package:myapp/Widget/navbar.dart';
 
@@ -17,7 +18,9 @@ class _HomeState extends State<Home> {
     h = MediaQuery.of(context).size.height;
     return Scaffold(
       body: SingleChildScrollView(
-        child: Container(child: Column(children: [NavBar(), COntainer1()])),
+        child: Container(
+          child: Column(children: [NavBar(), COntainer1(), COntainer2()]),
+        ),
       ),
     );
   }
